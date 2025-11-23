@@ -1,0 +1,101 @@
+# ============================
+# Python 常规
+# ============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+
+# 虚拟环境
+.env
+.venv
+venv/
+ENV/
+env/
+
+# 包
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# ============================
+# PyTorch 训练相关
+# ============================
+# 模型权重
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# 训练结果
+Result/
+results/
+checkpoints/
+runs/
+logs/
+
+# TensorBoard
+events.out.tfevents.*
+
+# ============================
+# 数据集（体积大，勿加入 git）
+# ============================
+Dataset/
+data/
+datasets/
+*.npy
+*.npz
+*.csv
+*.h5
+
+# ============================
+# VSCode / IDE 文件
+# ============================
+.vscode/
+.idea/
+*.code-workspace
+
+# ============================
+# 输出图片（测试保存的图像）
+# ============================
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+
+# ============================
+# 临时文件 / 系统垃圾
+# ============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python 虚拟化 / 编译缓存
+.cache/
+.ipynb_checkpoints/
+.pytest_cache/
+mypy_cache/
+
+# ============================
+# OS 目录
+# ============================
+# Windows
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================
+# 项目特定忽略（建议）
+# ============================
+# 用于实验的中间文件
+logs/
+output/
+temp/
+temp_*/
