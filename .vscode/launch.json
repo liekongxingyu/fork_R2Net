@@ -1,0 +1,36 @@
+{
+  // 使用 IntelliSense 了解相关属性。
+  // 悬停以查看现有属性的描述。
+  // 更多信息：https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python 调试程序: 去噪训练 R2NET",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",              // main.py
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+      "args": [
+        "--model", "R2NET",
+        "--scale", "1",
+        "--data_train", "awtd",
+        "--data_test", "awtd",
+        "--dir_data", "../Dataset",        // 你的数据路径（可改）
+        "--ext", "png",
+        "--patch_size", "128",
+        "--batch_size", "16",
+        "--n_threads", "4",
+        "--epochs", "3000",
+        "--lr", "1e-4",
+        "--n_resblocks", "16",
+        "--n_feats", "64",
+        "--loss", "1*L1",
+        "--save", "R2NET_Denoise",
+        "--print_every", "100"
+      ]
+    }
+  ]
+}

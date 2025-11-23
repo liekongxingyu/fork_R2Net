@@ -54,7 +54,7 @@ datasets/
 # ============================
 # VSCode / IDE 文件
 # ============================
-.vscode/
+
 .idea/
 *.code-workspace
 
